@@ -30,7 +30,7 @@ ynh_add_systemd_config_custom () {
 		ynh_replace_string --match_string="__APP__" --replace_string="$app" --target_file="$finalsystemdconf"
 	fi
 	if test -n "${interface:-}"; then
-		ynh_replace_string --match_string="__INTERFACE__" --replace_string="$app" --target_file="$finalsystemdconf"
+		ynh_replace_string --match_string="__INTERFACE__" --replace_string="$interface" --target_file="$finalsystemdconf"
 	fi
 
 	ynh_store_file_checksum --file="$finalsystemdconf"
