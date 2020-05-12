@@ -1,0 +1,6 @@
+SOURCE_URL=https://gitlab.127-0-0-1.fr/vx3r/wg-gen-web/-/jobs/237/artifacts/download
+SOURCE_SUM=2c12a5d662bc6eab14467bdae785fb596d1e8cb4e2c9eea56429ba905fc691b3
+SOURCE_SUM_PRG=sha256sum
+SOURCE_FORMAT=zip
+SOURCE_IN_SUBDIR=false
+SOURCE_FILENAME=wg-gen-web-linux-amd64

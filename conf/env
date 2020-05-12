@@ -1,0 +1,20 @@
+# IP address to listen to
+SERVER=127.0.0.1
+# port to bind
+PORT=__PORT__
+# Gin framework release mode
+GIN_MODE=release
+# where to write all generated config files
+WG_CONF_DIR=/etc/wireguard/
+# WireGuard main config file name, generally <interface name>.conf
+WG_INTERFACE_NAME=__INTERFACE__.conf
+
+# SMTP settings to send email to clients
+SMTP_HOST=localhost
+SMTP_PORT=25
+SMTP_USERNAME=
+SMTP_PASSWORD=
+SMTP_FROM=Wg Gen Web < wg@__DOMAIN__>
+
+# set provider name to fake to disable auth, also the default
+OAUTH2_PROVIDER_NAME=fake

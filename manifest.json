@@ -1,0 +1,54 @@
+{
+    "name": "WG Gen Web",
+    "id": "wg-gen-web",
+    "packaging_format": 1,
+    "description": {
+        "en": "Simple Web based configuration generator for WireGuard",
+        "fr": "Generateur de configuration Web pour Wireguard"
+    },
+    "version": "1.0~ynh1",
+    "url": "https://github.com/vx3r/wg-gen-web",
+    "license": "WTFPL",
+    "maintainer": {
+        "name": "plopoyop",
+        "email": "plopoyop@gmail.com"
+    },
+    "requirements": {
+        "yunohost": ">= 3.5"
+    },
+    "multi_instance": true,
+    "services": [
+        "nginx"
+    ],
+    "arguments": {
+        "install" : [
+            {
+                "name": "domain",
+                "type": "domain",
+                "ask": {
+                    "en": "Choose a domain name for ynhexample",
+                    "fr": "Choisissez un nom de domaine pour ynhexample"
+                },
+                "example": "example.com"
+            },
+            {
+                "name": "admin",
+                "type": "user",
+                "ask": {
+                    "en": "Choose an admin user",
+                    "fr": "Choisissez l’administrateur"
+                },
+                "example": "johndoe"
+            },
+            {
+                "name": "interface",
+                "type": "string",
+                "ask": {
+                    "en": "Wireguard network interface name",
+                    "fr": "Nom de l'interface réseau Wireguard"
+                },
+                "example": "wg0"
+            }
+        ]
+    }
+}
