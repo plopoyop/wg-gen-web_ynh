@@ -19,6 +19,7 @@ app=$YNH_APP_INSTANCE_NAME
 domain=$(ynh_app_setting_get --app=$app --key=domain)
 port=$(ynh_app_setting_get --app=$app --key=port)
 final_path=$(ynh_app_setting_get --app=$app --key=final_path)
+interface=$(ynh_app_setting_get --app=$app --key=interface)
 
 #=================================================
 # STANDARD REMOVE
@@ -40,8 +41,8 @@ ynh_script_progression --message="Stopping and removing the systemd service..." 
 
 # Remove the dedicated systemd config
 ynh_remove_systemd_config_custom
-ynh_remove_systemd_config_custom -s wg-reloader.path -u path
-ynh_remove_systemd_config_custom -s wg-reloader.service
+ynh_remove_systemd_config_custom -s $interface-reloader.path -u path
+ynh_remove_systemd_config_custom -s $interface-reloader.service
 
 #=================================================
 # REMOVE APP MAIN DIR

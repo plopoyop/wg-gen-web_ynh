@@ -97,8 +97,8 @@ ynh_script_progression --message="Configuring a systemd service..." --time --wei
 
 # Create a dedicated systemd config
 ynh_add_systemd_config_custom
-ynh_add_systemd_config_custom -s wg-reloader -t wg-reloader.service -u service
-ynh_add_systemd_config_custom -s wg-reloader -t wg-reloader.path -u path
+ynh_add_systemd_config_custom -s $interface-reloader -t wg-reloader.service -u service
+ynh_add_systemd_config_custom -s $interface-reloader -t wg-reloader.path -u path
 
 
 #=================================================
