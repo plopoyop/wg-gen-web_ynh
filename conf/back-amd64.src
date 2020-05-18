@@ -1,5 +1,5 @@
-SOURCE_URL=https://gitlab.127-0-0-1.fr/vx3r/wg-gen-web/-/jobs/237/artifacts/download
-SOURCE_SUM=2c12a5d662bc6eab14467bdae785fb596d1e8cb4e2c9eea56429ba905fc691b3
+SOURCE_URL=https://gitlab.127-0-0-1.fr/vx3r/wg-gen-web/-/jobs/310/artifacts/download
+SOURCE_SUM=637a803cf54e0ce59b0bf47be40343de0e6d15ee603da8d5eb655f23e23924e8
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=zip
 SOURCE_IN_SUBDIR=false
