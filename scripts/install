@@ -147,7 +147,10 @@ ynh_systemd_action --service_name="wg-reloader.path" --action="start"
 #=================================================
 # SETUP SSOWAT
 #=================================================
-ynh_script_progression --message="Configuring SSOwat..." --time --weight=1
+ynh_script_progression --message="Configuring permissions..." --time --weight=1
+
+# Restrict access to admin only
+ynh_permission_update --permission "main" --remove all_users --add "$admin"
 
 #=================================================
 # RELOAD NGINX
