@@ -6,7 +6,7 @@
         "en": "Simple Web based configuration generator for WireGuard",
         "fr": "Generateur de configuration Web pour Wireguard"
     },
-    "version": "7e2146a2~ynh1",
+    "version": "8b4038c~ynh1",
     "url": "https://github.com/vx3r/wg-gen-web",
     "license": "WTFPL",
     "maintainer": {
